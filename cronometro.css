@@ -26,7 +26,7 @@ main{
 .circle::before{
   background-color: tomato;
   content: '';
-  border-radius: 50%;
+  border-radius: 25%;
   position: absolute;
   width: 160px;
   height: 160px;
