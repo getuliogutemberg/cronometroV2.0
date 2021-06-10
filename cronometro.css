@@ -6,7 +6,6 @@
 main{
   font-family:'Times New Roman', Times, serif;
   position: relative;
-  background-color: teal;
 }
 
 .circle{
@@ -20,4 +19,15 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.circle::before{
+  background-color: tomato;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: calc(50% - 80px);
+  top: calc(50% - 80px);
 }
