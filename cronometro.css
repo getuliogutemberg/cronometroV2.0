@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  font-family:'Times New Roman', Times, serif;
+  position: relative;
+  background-color: teal;
+}
+
+.circle{
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  color: white;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

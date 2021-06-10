@@ -8,7 +8,18 @@
   <link rel="stylesheet" href="cronometro.css">
 </head>
 <body>
-  
+  <main>
+    <div class="circle">
+      <div id="stopwatch" class="stopwatch">
+        00:00
+      </div>
+      <div class="buttons">
+        <button class="stop" onclick="stop()"></button>
+        <button class="play-pause" onclick="playPause()"></button>
+      </div>
+      <div id="secondCircle" class="secondCircle"></div>
+    </div>
+  </main>
 </body>
 <script src="cronometro.js"></script>
 </html>
