@@ -30,4 +30,22 @@ main{
   height: 160px;
   left: calc(50% - 80px);
   top: calc(50% - 80px);
+  z-index: -1;
 }
+
+.secondCircle{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  animation: rotacion 10s linear infinite;
+}
+
+@keyframes rotacion {
+  from { transform: rotate(-90deg) translateX(60px); }
+  to   { transform: rotate(270deg) translateX(60px); }
+}
+
