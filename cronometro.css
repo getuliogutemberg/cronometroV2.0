@@ -6,6 +6,8 @@
 main{
   font-family:'Times New Roman', Times, serif;
   position: relative;
+  font-size: 20px;
+  cursor:default;
 }
 
 .circle{
@@ -42,6 +44,8 @@ main{
   left: calc(50% - 10px);
   top: calc(50% - 10px);
   animation: rotacion 10s linear infinite;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 @keyframes rotacion {
@@ -49,3 +53,32 @@ main{
   to   { transform: rotate(270deg) translateX(60px); }
 }
 
+.buttons{
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+.play-pause{
+  height: 20px;
+  border-width: 10px 0px 10px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 15px;
+  border-color: tomato crimson;
+  transition: 100ms all case;
+  will-change: border-width;
+  border-style: solid;
+}
+
+.running{
+  border-style: double;
+  border-width: 0 0 0 10px;
+}
+
+.stop{
+  background-color: crimson;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border: none;
+}
